@@ -1,54 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geography of Indonesia</title>
-</head>
-<body>
-  <header>
-    <nav aria-label="Page navigation"><a href="indexassignment2.html">Back to Indonesia</a></nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geography Page</title>
+  </head>
+  <body>
+    <!-- Generic element using div -->
+    <div>
+      <a href="indexassignment2.html">Back</a>
+    </div>
 
-  <main>
+    <!-- Article component -->
     <article>
-      <h1>Indonesia Geography</h1>
       <section>
-        <h2>Location and islands</h2>
-        <img src="Images/Images HCI website/img_4.jpg" alt="Geography of Indonesia" width="500">
-        <p>The southernmost country in Asia, Indonesia lies between latitudes 11°S and 6°N and longitudes 95°E and 141°E. It spans Southeast Asia and Oceania and is the world's largest archipelagic state. Its five largest islands are Sumatra, Java, Borneo, Sulawesi, and New Guinea.</p>
-      </section>
-      <section>
-        <h2>Climate</h2>
-        <img src="Images/Images HCI website/img_5.jpg" alt="Landscape in Indonesia" width="500">
-        <p>Indonesia's position near the equator brings warm conditions throughout the year. The dry season usually runs from May to October and the wet season from November to April. Highland areas are generally cooler and wetter than the lowlands.</p>
-      </section>
-      <section>
-        <h2>Major islands</h2>
-        <table border="1">
-          <caption>Examples of Indonesia's major islands</caption>
-          <thead><tr><th scope="col">Island</th><th scope="col">Location</th></tr></thead>
-          <tbody>
-            <tr><td>Sumatra</td><td>Western Indonesia</td></tr>
-            <tr><td>Java</td><td>South of Borneo</td></tr>
-            <tr><td>Sulawesi</td><td>Central Indonesia</td></tr>
-          </tbody>
-        </table>
+        <h1>Indonesia Geography</h1>
+        <img src="Images/Images HCI website/img_4.jpg" alt="image 01" width="500px" />
+        <p>
+          The southernmost country in Asia, Indonesia lies between latitudes 11°S and 6°N and
+          longitudes 95°E and 141°E. It is also a transcontinental country, spanning Southeast Asia
+          and Oceania and is the world's largest archipelagic state, stretching 5,120 kilometres
+          (3,181 mi) from east to west and 1,760 kilometres (1,094 mi) from north to south. The
+          exact number of Indonesia's islands varies according to different sources, usually ranging
+          from 13,000 to 17,000, with around 922 permanently inhabited. Its five largest islands are
+          Sumatra, Java, Borneo (shared with Brunei and Malaysia), Sulawesi, and New Guinea (shared
+          with Papua New Guinea).
+        </p>
+
+        <img src="Images/Images HCI website/img_5.jpg" alt="image 02" width="500px" />
+
+        <p>
+          Indonesia's equatorial position ensures a relatively stable climate year-round,
+          characterised by two main seasons: the dry season from May to October and the wet season
+          from November to April, with no extremes of summer and winter. The climate is
+          predominantly tropical rainforest, with cooler climates in higher areas over 500 metres
+          (1,600 feet) above sea level. In Indonesia's highland regions, the climate is cooler and
+          wetter than in the lowlands. Areas near tropical rainforests tend to receive consistent
+          rainfall year-round (Köppen: Cfb), while those closer to monsoon and savanna regions have
+          more distinct dry seasons (Köppen: Cwb)
+        </p>
       </section>
     </article>
 
+    <!-- Form Component -->
     <section>
       <h2>Share Your Thoughts</h2>
       <form action="#" method="post">
-        <p><label for="name">Full Name:</label><br>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required></p>
-        <p><label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required></p>
-        <p><label for="feedback">Your Feedback:</label><br>
-          <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Write your feedback here..."></textarea></p>
+        <label for="name">Full Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        /><br /><br />
+
+        <label for="feedback">Your Feedback:</label><br />
+        <textarea
+          id="feedback"
+          name="feedback"
+          rows="5"
+          cols="40"
+          placeholder="Write your feedback here..."
+        ></textarea
+        ><br /><br />
+
         <button type="submit">Submit</button>
       </form>
     </section>
-  </main>
-</body>
+    <section aria-labelledby="population-table-heading">
+      <h2 id="population-table-heading">Population table example</h2>
+      <table border="1">
+        <caption>Population by Country</caption>
+        <thead>
+          <tr>
+            <th scope="col">Country</th>
+            <th scope="col">Capital</th>
+            <th scope="col">Population (millions)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Indonesia</td><td>Jakarta</td><td>270</td></tr>
+          <tr><td>Japan</td><td>Tokyo</td><td>125</td></tr>
+          <tr><td>France</td><td>Paris</td><td>67</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2">Total Population</td><td>462</td></tr>
+        </tfoot>
+      </table>
+    </section>
+  </body>
 </html>
